@@ -1,0 +1,10 @@
+Package: debfile
+Version: 1.1.1
+Architecture: all
+Essential: no
+Section: web
+Priority: optional
+Depends: python3
+Maintainer: Mustafa Akocak
+Description: Örnek deb file
+
