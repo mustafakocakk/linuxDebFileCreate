@@ -99,6 +99,7 @@ sudo  apt-get update
 #!/bin/sh
 cd /tmp
 mkdir deneme
+
 **Prerm Dosyaları**
 
 #!/bin/sh
@@ -106,10 +107,11 @@ if [ "$1" = "remove" ]; then
        rmdir /tmp/deneme
 fi
 
+**derleme**
+dpkg-deb --build /home/akocak/Debfile/
 
- dpkg-deb --build /home/akocak/Debfile/
+**çalıştırma**
+dpkg -i Debfile.deb
 
-
- dpkg -i Debfile.deb
-
+**kaldırma**
 dpkg -r debfile
